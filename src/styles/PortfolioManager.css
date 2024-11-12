@@ -1,0 +1,252 @@
+.portfolio-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.portfolio-header {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.client-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.client-section label {
+    font-size: 1.2rem;
+    color: #343a40;
+}
+
+.client-section input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.client-section input:focus {
+    border-color: #748d75;
+    outline: none;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.upload-section label {
+    font-size: 1.1rem;
+    color: #343a40;
+}
+
+.upload-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.upload-label input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.upload-placeholder {
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #748d75;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #748d75;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.upload-placeholder:hover {
+    border-color: #62715f;
+}
+
+.upload-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.upload-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #748d75;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #62715f;
+}
+
+.progress-bar {
+    margin-top: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+}
+
+.progress-bar div {
+    background-color: #748d75;
+    height: 100%;
+    transition: width 0.4s ease;
+}
+
+.success-message {
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.portfolios-section {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.portfolio-card h3 {
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.edit-button,
+.delete-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-image-item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image-item img:hover {
+    transform: scale(1.05);
+}
+
+.delete-gallery-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-gallery-button:hover {
+    background-color: #c82333;
+}
